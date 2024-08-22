@@ -1,0 +1,343 @@
+
+body{
+   transform: scale(1); 
+   width: 100%;
+   height: 100%;
+}
+
+
+.header{
+    width: 100%;
+    height: 108px;
+    display: grid;
+    grid-template-columns: 65% 25% 15%;
+    grid-template-rows: 1;
+    font-size: 100%;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.description{
+
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:  repeat(4, 260px);
+    justify-items: send;
+}
+
+section h1{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    text-transform:uppercase
+}
+
+section p{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+section a{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+.sofa{
+    width: 329px;;
+    height: 493px;
+    grid-row: 3/5;
+    grid-column: 1/2;
+
+}
+.armchair{
+    width: 678px;
+    height: 758px;
+    grid-row: 2/5;
+    grid-column:3/2;
+    align-content: end;
+   
+
+    
+}
+.about_Us_1{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:  repeat(2, 260px);
+    
+
+}
+
+.about_Us_1_1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    
+}
+
+.about_Us_1_3{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.about_Us_2{
+    display: grid;
+    grid-template-columns:50% 1fr 1fr;
+    grid-template-rows:  repeat(6, 150px);
+    
+}
+
+.about_Us_2_p2{
+    grid-column:3/4 ;
+}
+
+.about_Us_2_p1{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+.about_Us_2_p2{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.about_Us_2_p3{
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+.about_Us_2_p4{
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+.about_Us_2_p5{
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+.about_Us_2_p6{
+    grid-row: 6/6;
+    grid-column: 3/4;
+}
+
+
+.about_Us_2_h3_1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+}
+.about_Us_2_h3_2{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    
+}
+.about_Us_2_h3_3{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    
+}
+.about_Us_2_h3_4{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    
+}
+.about_Us_2_h3_5{
+    grid-column: 2/3;
+    grid-row: 6/6;
+    
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    grid-template-rows:  repeat(2, 600px);
+    margin: 5px;
+    padding: 5px;
+
+}
+.projects img{
+    width: 446px;
+    height: 580px;
+    margin: 5px;
+}
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    grid-template-rows: repeat(1, 400px);
+}
+
+.reviews img{
+    width: 446px;
+    height: 400px;
+    margin: 5px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 100%;
+
+
+}
+
+@media screen and (min-width: 300px) and (max-width:426px) {
+
+    body{
+        width: 320px;
+        height: 100%;
+
+    }
+        .header{
+            width: 90%;
+            display: grid;
+            grid-template-columns: 65% 25% 15%;
+            grid-template-rows: 1;
+            font-size: 100%;
+            
+        }
+        .description{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+                     
+        }
+    .description h1{
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+
+        .armchair{
+            display: none;
+            
+        }
+        .about_Us_1{
+             display: flex;
+             flex-direction: column;
+             width: 100%;
+             font-size: 1rem;
+
+             .sofa{
+                width: 100%;
+                height: 100%;
+             }
+
+
+        }
+        .about_Us_2{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .reviews{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .reviews img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .projects{
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .projects img{
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        
+        footer{
+            display: flex;
+            flex-direction: column-reverse;
+            
+        }
+
+}
+
+@media screen and (min-width: 427px) and (max-width: 768px) {
+
+    body{
+        width: 100%;
+        height: 100%;
+
+    }
+        .header{
+            width: 90%;
+            display: grid;
+            grid-template-columns: 65% 25% 15%;
+            grid-template-rows: 1;
+            font-size: 100%;
+            
+        }
+        .description{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+
+                     
+        }
+    .description h1{
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+
+        .armchair{
+            display: none;
+            
+        }
+        .about_Us_1{
+             display: flex;
+             flex-direction: column;
+             width: 100%;
+             font-size: 1rem;
+
+             .sofa{
+                width: 100%;
+                height: 100%;
+             }
+
+
+        }
+        .about_Us_2{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .reviews{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .reviews img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .projects{
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .projects img{
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        
+        footer{
+            display: flex;
+            flex-direction: column-reverse;
+            
+        }
+
+}
+
+
+
